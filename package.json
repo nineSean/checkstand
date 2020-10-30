@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "vue-cli-service serve",
-    "dev:mock": "MOCK=true vue-cli-service serve",
+    "dev:mock": "cross-env MOCK=true vue-cli-service serve",
     "build": "vue-cli-service build",
-    "mobile:dev": "MOBILE=true vue-cli-service serve",
-    "mobile:dev:mock": "MOBILE=true MOCK=true vue-cli-service serve",
-    "mobile:build": "MOBILE=true vue-cli-service build"
+    "mobile:dev": "cross-env MOBILE=true vue-cli-service serve",
+    "mobile:dev:mock": "cross-env MOBILE=true MOCK=true vue-cli-service serve",
+    "mobile:build": "cross-env MOBILE=true vue-cli-service build"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -22,6 +22,7 @@
     "@vue/cli-plugin-router": "~4.4.0",
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
+    "cross-env": "^7.0.2",
     "mocker-api": "^2.1.0",
     "mockjs": "^1.1.0",
     "sass": "^1.26.5",
