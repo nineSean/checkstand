@@ -3,7 +3,6 @@ const {setPages} = require("./build/utils")
 const apiMocker = require('mocker-api')
 const baseUrl = process.env.BASE_URL
 const nodeEnv = process.env.NODE_ENV
-// console.log('pages', setPages())
 
 const resolve = (...directorys) => path.join(__dirname, ...directorys)
 
@@ -44,7 +43,6 @@ module.exports = {
     historyApiFallback: {
       rewrites: [
         {from: new RegExp(baseUrl + 'index'), to: baseUrl + 'index.html'},
-        {from: new RegExp(baseUrl + 'about'), to: baseUrl + 'about.html'},
       ]
     },
     before(app) {

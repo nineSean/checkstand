@@ -1,8 +1,16 @@
 // 设计稿宽度
-$designWidth: 750;
-
+$designWidth: 1920;
 @function px($n) {
   $rem: $n/$designWidth*10rem;
   @return $rem
 }
 
+$fontSize: px(24);
+$borderColor: #e8e8e8;
+$blue: #0073f8;
+
+ul,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
